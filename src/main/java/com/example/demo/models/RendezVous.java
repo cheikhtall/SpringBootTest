@@ -22,8 +22,11 @@ public class RendezVous implements Serializable {
 	private String codeRV;
 	private String description;
 	private String lieu;
-	@JsonFormat(pattern="dd/MM/yyy")
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate date;
+	public RendezVous() {
+		super();
+	}
 	public RendezVous(String codeRV, String description, String lieu, LocalDate date) {
 		super();
 		this.codeRV = codeRV;
